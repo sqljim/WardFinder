@@ -1,0 +1,24 @@
+{
+  "name": "emergencyregister",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@mapbox/togeojson": "^0.16.0",
+    "@material/switch": "^3.1.0",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.2",
+    "eslint": "^5.7.0",
+    "express": "^4.16.4",
+    "helmet": "^3.20.0",
+    "http-errors": "~1.6.2",
+    "material-components-web": "^3.1.0",
+    "mysql": "^2.16.0",
+    "node-sass": "^4.12.0",
+    "node-sass-middleware": "^0.11.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {}
+}

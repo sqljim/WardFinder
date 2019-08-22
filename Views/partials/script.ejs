@@ -1,0 +1,40 @@
+<script>
+
+  [].slice.call(document.querySelectorAll('.mdc-text-field')).forEach(
+  function(ele) {
+    mdc.textField.MDCTextField.attachTo(ele);
+  });
+
+  [].slice.call(document.querySelectorAll('.mdc-switch')).forEach(
+  function(ele) {
+    console.log(mdc)
+    mdc.switchControl.MDCSwitch.attachTo(ele);
+  });
+
+  [].slice.call(document.querySelectorAll('.mdc-select')).forEach(
+  function(ele) {
+    console.log(mdc)
+    mdc.select.MDCSelect.attachTo(ele);
+  });
+
+  [].slice.call(document.querySelectorAll('.mdc-radio')).forEach(
+  function(ele) {
+    mdc.radio.MDCRadio.attachTo(ele);
+  });
+
+  [].slice.call(document.querySelectorAll('.mdc-chip-set')).forEach(
+  function(ele) {
+    mdc.chips.MDCChipSet.attachTo(ele);
+  });
+
+  // [].slice.call(document.querySelectorAll('.mdc-chip')).forEach(
+  // function(ele) {
+  //   mdc.chips.MDCChip.attachTo(ele);
+  // });
+
+
+
+
+</script>
+
+        

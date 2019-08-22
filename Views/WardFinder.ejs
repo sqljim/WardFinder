@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <% include partials/topbar %>
+  <% include partials/head %>
+
+  <div id="main">
+
+  <h2>Address Search</h2>
+
+  <form id="caseForm" class="mapForm" enctype="multipart/form-data" autocomplete="new-password">
+
+
+
+            <div class="row gtr-uniform">
+                <!-- Include the Google location picker -->
+                <fieldset class="gllpLatlonPicker">
+                    <input type="text" name="caseAddress" id="case-address" class="gllpSearchField" value="Syphon Choraya, Udaipur" placeholder="Enter animal address and hit Search" autocomplete="new-password" required>
+                    <input type="button" id="gllpSearchButton" class="gllpSearchButton" value="search">
+                    <br /><br />
+                    <div class="gllpMap" id="case-map">Google Maps</div>
+                    <br />
+                    <div class="row gtr-uniform">
+                        <div class="col-4">
+
+                            <label for="gglLat">Lat</label>
+                            <input type="text" id="gglLat" name="caseLatitude" class="gllpLatitude" value="24.585445" /></div>
+                        <div class="col-4">
+                            <label for="gglLong">Long</label>
+                            <input type="text" id="gglLong" name="caseLongitude" class="gllpLongitude" value="73.71247900000003" />
+                        </div>
+                        <div class="col-2">
+                            <label for="gglZoom">Zoom</label>
+                            <input type="text" id="gglZoom" class="gllpZoom" value="13" />
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            
+
+                <fieldset >
+
+                    <input type="button"  id="findWard" value="Find Ward">
+
+                </br></br>
+
+
+
+                    <div class="row gtr-uniform">
+
+                        <div class="col-6">
+                            <label for="ward-id">Ward ID</label>
+                            <input type="text" id="ward-id"/>
+                        </div>
+        
+                        <div class="col-6">
+                            <label for="ward-name">Ward Name</label>
+                            <input type="text" name="wardname" id="ward-name" />
+                        </div>
+        
+                    </div>
+                </fieldset>
+
+
+            </div>
+
+          </form>
+
+
+          <% include partials/script %>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDErqkBJeN25gzLOOTO8BIRZtYurDZy8gc"></script>
+          <script src="/javascripts/jquery-gmaps-latlon-picker.js"></script>
+          <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+          <script src="/javascripts/togeojson.js"></script>
+          <script src="/javascripts/WardFinder.js"></script>
+
+        </div>
+
+    </body>
+
+
+
+</html>
